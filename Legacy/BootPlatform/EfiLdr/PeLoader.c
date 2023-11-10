@@ -36,6 +36,8 @@ EfiLdrLoadImage (
   EFI_STATUS                       Status;
   UEFI_IMAGE_LOADER_IMAGE_CONTEXT  ImageContext;
 
+  ImageContext.ImageOrigin = UefiImageOriginFv;
+
   Status = UefiImageInitializeContext (
              &ImageContext,
              FHand,

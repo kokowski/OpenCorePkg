@@ -281,6 +281,8 @@ OcImageLoaderLoad (
   //
   // Initialize the image context.
   //
+  ImageContext.ImageOrigin = UefiImageOriginFv;
+
   ImageStatus = UefiImageInitializeContext (
                   &ImageContext,
                   SourceBuffer,
